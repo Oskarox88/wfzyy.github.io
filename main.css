@@ -1,0 +1,133 @@
+* {
+  -webkit-user-select: none;
+  user-select: none;
+  font-family: 'Eater', cursive;
+}
+body {
+  animation: ani ease 3.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  font-family: 'Eater', cursive;
+  background-color:black;
+}
+
+
+@keyframes ani {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+
+#o-t {
+  position:absolute;
+  display: none;
+
+}
+#o-t:checked ~ .enter {
+  animation-fill-mode: forwards;
+  animation-name: fade, hide;
+  animation-delay: 0s, 500ms;
+  animation-duration: 500ms, 1ms;
+}
+
+
+#ss {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8rem;
+}
+
+#o-t:checked ~ .enter label {
+  animation-fill-mode: forwards;
+  animation-name: fade;
+  animation-delay: 0s;
+  animation-duration: 600ms;
+}
+
+.enter {
+  z-index: 1;
+  background-image: url("background.png");
+  background-position: 100%;
+}
+
+#s {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 .7em rgb(252, 252, 252);
+}
+
+.enter label {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vw;
+  color: rgb(255, 255, 255);
+  font-size: 2.5rem;
+}
+
+img {
+  border-radius: 120px;
+}
+
+.fl {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.bg {
+  z-index: -1;
+}
+
+#tp {
+  margin-top: 2.5rem;
+  place-items: center;
+  display: grid;
+  color: black;
+  font-size: 32px;
+  text-shadow: 0 0 .7em rgb(252, 252, 252);
+}
+.no-hover {
+display: block;
+}
+.hover {
+display: none;
+}
+
+@media(hover: hover) {
+  .hover {
+    display: block;
+  }
+  .no-hover {
+    display: none;
+  }
+}
+@keyframes fade{
+  to {
+    opacity: 0;
+  }
+}
+@keyframes hide {
+  to {
+    visibility: hidden;
+  }
+}
+
+.glow {
+  text-shadow:1px 1px 4px #FFFFE9, 1px 1px 2px #ffffe9;
+}
+

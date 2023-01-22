@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oskar</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eater&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    svg {
+        display: inline-block;
+        margin-left: 2px;
+        margin-right: 5px;
+        padding-left: 3px;
+        padding-right: 0;
+        margin-top: 7px
+    }
+    </style>
+
+<video class="fl bg" id=video loop playsinline preload="auto">
+    <source src="https://cdn.hris.wtf/vidoskar.mp4" type="video/mp4">
+</video>
+<input autocomplete="off" id=o-t type="checkbox">
+<div class="fl enter">
+        <label for=o-t onclick=vid(),vol()><span class="glow no-hover" style="font-size:2em;text-align: center; color: #FFFFE9;">tap to enter</span> <span class="glow hover" style="font-size:2em; color: #FFFFE9;">click
+                to enter</span></label>
+</div>
+
+
+<section class="fl text-content"> <img , draggable=false height=210 id=ss src=https://cdn.hris.wtf/pfposkar.png width=210>
+
+<button id="s"> Oskar.#6969 </button>
+<div id="svsss" style="text-align: center; margin-top: 6px;">
+    <a href="https://open.spotify.com/user/31lsxasbioowzjg42pnk42sq5d7u" target="_blank" style="color: transparent; margin-left: 10px;">
+    <svg fill=white height=26 viewBox="0 0 16 16" width=25 xmlns=http://www.w3.org/2000/svg>
+        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z" /> </svg></a>
+
+    <a href="https://steamcommunity.com/profiles/76561199070148929/" target="_blank" style="margin-left: 10px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" class="bi bi-steam" viewBox="0 0 16 16">
+            <path d="M.329 10.333A8.01 8.01 0 0 0 7.99 16C12.414 16 16 12.418 16 8s-3.586-8-8.009-8A8.006 8.006 0 0 0 0 7.468l.003.006 4.304 1.769A2.198 2.198 0 0 1 5.62 8.88l1.96-2.844-.001-.04a3.046 3.046 0 0 1 3.042-3.043 3.046 3.046 0 0 1 3.042 3.043 3.047 3.047 0 0 1-3.111 3.044l-2.804 2a2.223 2.223 0 0 1-3.075 2.11 2.217 2.217 0 0 1-1.312-1.568L.33 10.333Z"/>
+            <path d="M4.868 12.683a1.715 1.715 0 0 0 1.318-3.165 1.705 1.705 0 0 0-1.263-.02l1.023.424a1.261 1.261 0 1 1-.97 2.33l-.99-.41a1.7 1.7 0 0 0 .882.84Zm3.726-6.687a2.03 2.03 0 0 0 2.027 2.029 2.03 2.03 0 0 0 2.027-2.029 2.03 2.03 0 0 0-2.027-2.027 2.03 2.03 0 0 0-2.027 2.027Zm2.03-1.527a1.524 1.524 0 1 1-.002 3.048 1.524 1.524 0 0 1 .002-3.048Z"/>
+          </svg>
+
+       </a>  
+</div>
+
+</section>
+
+
+<script>
+    function vid() {
+        document.getElementById("video").play()
+    }
+    function vol() {
+        var vol = document.getElementById("video");
+        vol.volume = 0.3;
+    }
+
+</script>
+</html>
